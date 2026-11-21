@@ -1,0 +1,24 @@
+Vortex Study — PWA
+
+CONTENUTO
+  index.html            l'app
+  manifest.webmanifest  nome, colori, icone, scorciatoie
+  sw.js                 funzionamento offline
+  icons/                icone 192/512, maskable, Apple, favicon
+
+COME PUBBLICARLA (serve HTTPS, altrimenti non si installa)
+  - GitHub Pages / Netlify / Vercel / Cloudflare Pages: carica TUTTA la cartella, tenendo i file nella stessa cartella.
+  - Per provarla sul PC:  python3 -m http.server 8000   poi apri http://localhost:8000
+
+COME INSTALLARLA
+  - Android (Chrome): menu ⋮ → "Installa app".
+  - iPhone/iPad (Safari): Condividi → "Aggiungi a Home".
+  - Computer (Chrome/Edge): icona di installazione nella barra dell'indirizzo.
+
+AGGIORNARE
+  Cambia VERSION in sw.js (es. vortex-study-v12-2) ogni volta che sostituisci index.html.
+
+NOTE
+  - Aprire index.html con doppio clic (file://) funziona come pagina, ma non si installa e non va offline.
+  - Offline funzionano: mappe, lezioni, laboratorio di matematica, Pomodoro, Modalità Bambini.
+    Servono internet per: AI (Gemini ecc.), Wikipedia, lettura OCR con Tesseract la prima volta.
